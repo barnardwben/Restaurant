@@ -1,7 +1,7 @@
 const displayLanding = (() => {
   // PAGE SECTION
   let landingSection = document.createElement("section");
-  landingSection.classList.add("active", "landing-section", "page-display");
+  landingSection.classList.add("landing-section", "page-display");
 
   // PAGE CONTENT CONTAINER
   let landContainer = document.createElement("div");

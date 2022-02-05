@@ -1,7 +1,7 @@
 const displayContact = (() => {
   // PAGE SECTION
   let contactSection = document.createElement("section");
-  contactSection.classList.add("no-show", "contact-section", "page-display");
+  contactSection.classList.add("contact-section", "page-display");
 
   // PAGE CONTENT CONTAINER
   let contactContainer = document.createElement("div");
