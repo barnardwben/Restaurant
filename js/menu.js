@@ -1,7 +1,7 @@
 const displayMenu = (() => {
   // PAGE SECTION
   let menuSection = document.createElement("section");
-  menuSection.classList.add("no-show", "menu-section", "page-display");
+  menuSection.classList.add("menu-section", "page-display");
 
   // PAGE CONTENT CONTAINER
   let menuContainer = document.createElement("div");

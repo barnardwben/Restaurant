@@ -7,6 +7,36 @@ body {
   box-sizing: border-box;
   background-position-y: -450px;
 
+  .navbar {
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    background: rgb(255, 213, 28);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+
+    .nav-tab {
+      padding: 1rem 3rem;
+      font-size: 1.3rem;
+      font-weight: 900;
+      height: 100%;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    .active {
+      opacity: 1;
+      border-bottom: 5px solid #000;
+    }
+
+    .nav-tab:hover {
+      background: rgba(0, 0, 0, 0.25);
+    }
+  }
+
   #content {
     .page-display {
       width: 100%;
@@ -15,8 +45,8 @@ body {
         width: 40%;
         height: 100%;
         padding: 1rem 0.5rem;
-        margin: 3rem auto;
-        background: rgba(0, 0, 0, 0.75);
+        margin: 5rem auto;
+        background: rgba(0, 0, 0, 0.449);
         background-repeat: repeat;
         background-size: 78px;
         text-align: center;
@@ -26,10 +56,14 @@ body {
         .page-header-container {
           padding: 0.5rem;
           border-radius: 5px;
-          width: fit-content;
+          width: 80%;
           margin: 0 auto;
           background: rgb(255, 229, 28);
           box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+
+          .page-header {
+            font-size: 2.4rem;
+          }
         }
       }
     }
