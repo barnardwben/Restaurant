@@ -1,9 +1,10 @@
-function component() {
-  const element = document.createElement("div");
+import { displayLanding } from "./landing";
+import { displayMenu } from "./menu";
+import { displayContact } from "./contact";
+import "../scss/style.scss";
 
-  element.innerHTML = "Hello World Testing";
+const PaintUI = (() => {
+  let content = document.querySelector("#content");
 
-  return element;
-}
-
-document.body.appendChild(component());
+  content.appendChild(displayLanding.landingSection);
+})();
